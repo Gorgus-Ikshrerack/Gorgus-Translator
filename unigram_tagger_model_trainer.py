@@ -36,13 +36,18 @@ def generate_tagger():
     return unigram_tagger
 
 def import_tagger():
-    import dill
-    import os
+    try:
+        import dill
+        import os
 
-    # noinspection PyBroadException
-    #try:
-    with open(f'{os.path.dirname(__file__)}/{tagger_file}', 'rb') as fin:
-        return dill.load(fin)
+        # noinspection PyBroadException
+        #try:
+        with open(f'{os.path.dirname(__file__)}/{tagger_file}', 'rb') as fin:
+            return dill.load(fin)
+    # pickling doesn't work in the WASM version of CPython, prevent dill loading errors from borking the web translator.
+    #     ~ HSI
+    except ModuleNotFoundError:
+        return None
     #except:
         #return None
 
