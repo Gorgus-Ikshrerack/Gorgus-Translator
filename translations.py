@@ -623,6 +623,7 @@ phrase_translations = { # if one of these phrases appears before another phrase 
     "kunther bonkep": "wanna",
     "muke": ["come back", "come back here"],
     "geep tijin": ["don't", "dont", "do not"],
+    "geepra tijin": ["didn't", "didnt", "did not"],
     "mébis tijin": ["won't", "wont", "will not"],
     "hènġer mébis tijin": ["i won't", "i'm not going to", "im not going to"],
     "goob'rung": "you have",
