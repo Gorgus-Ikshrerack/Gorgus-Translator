@@ -3,3 +3,4 @@ wheel
 nltk
 inflect
 word_forms
+dill

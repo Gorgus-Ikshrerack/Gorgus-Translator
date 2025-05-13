@@ -551,7 +551,7 @@ These are the people that make this possible! *(all of these are Discord usernam
 - **@defohumanreal:** Contributed many words, came up with the idea for the `Games` tab
 - **@the-trumpeter:** Made a counting system for the language (yet to be implemented)
 - **@killerpug:** Created a lot of words for adjectives / nouns
-- **@projecthsi:** Made the **ENTIRE** web project!""", show_table_of_contents=False)
+- **@projecthsi:** Made the **ENTIRE** web project and helped migrate from SpaCy!""", show_table_of_contents=False)
             with TabPane("Games"):
                 with VerticalScroll() as container:
                     container.can_focus = False

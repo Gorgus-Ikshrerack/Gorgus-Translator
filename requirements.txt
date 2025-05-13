@@ -9,3 +9,4 @@ rich
 pyfiglet
 psutil
 pyperclip
+dill

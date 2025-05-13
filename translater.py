@@ -1,12 +1,11 @@
 #
 #  translater.py
 #
-#import spacy
 import argparse
 import json
 import unittest
 
-# CLI LOGIC #
+#region CLI Logic
 def patched_addSuccess(self, test):
     if not hasattr(self, 'successes'):
         self.successes = []
@@ -151,13 +150,15 @@ if __name__ == '__main__':
         print("You didn't provide a command!")
         arg_parser.print_usage()
         exit(1)
-# END OF CLI LOGIC #
+#endregion
 
 import re
 import unicodedata
 
 import nltk
 import inflect
+
+import unigram_tagger_model_trainer
 
 from translations import *
 from word_forms.word_forms import get_word_forms
@@ -224,7 +225,7 @@ console.print("[bold bright_green]INFO[/bold bright_green] Importing [bold]nltk.
 import nltk.corpus
 console.print("[bold bright_green]INFO[/bold bright_green] Getting [bold]NLTK Unigram Tagger[/bold]..")
 # the default tagger is not good, for some reason.
-unigram_tagger = nltk.UnigramTagger(nltk.corpus.brown.tagged_sents())
+unigram_tagger = unigram_tagger_model_trainer.get_tagger_and_train_if_not_found()
 
 
 def get_word_type(word):
