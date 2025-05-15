@@ -161,7 +161,6 @@ import inflect
 import unigram_tagger_model_trainer
 
 from translations import *
-from word_forms.word_forms import get_word_forms
 from nltk.stem import WordNetLemmatizer, LancasterStemmer
 from typing import Literal
 from time import time
