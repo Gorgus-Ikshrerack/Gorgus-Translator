@@ -161,7 +161,6 @@ import inflect
 import unigram_tagger_model_trainer
 
 from translations import *
-from word_forms.word_forms import get_word_forms
 from nltk.stem import WordNetLemmatizer, LancasterStemmer
 from typing import Literal
 from time import time
@@ -430,21 +429,10 @@ def from_actor_form(actor, lemma = True):
     """
     Convert an actor form word back to its root.
     """
-    # if wordnet is not available we have to make compromises
-    if not wordnet_download_success: return actor
-    #! I AM AWARE THIS IS COMPLETE AND UTTER DOGSHIT!!!!
-    #! THIS IS TURNING AN O(1) OPERATION INTO AN O(n) OPERATION!!!!
-    #! I'M CONVERTING A SET TO A LIST, WHICH IS VERY BAD
-    #! BUT THIS SET IS SO SMALL I DONT GIVE A SHIT
-    #! RAHHHHHH
-    forms = list(get_word_forms(actor)["v"])
-    try:
-        if lemma:
-            return LancasterStemmer().stem(forms[0])
-            #return nlp(forms[0])[0].lemma_
-        return forms[0]
-    except IndexError:
-        return actor
+    if not lemma:
+        raise Exception("Invalid parameters - lemma must be True")
+
+    return stemmer.stem(actor)
 
 def get_trailing_punctuation(text, ignore_chars=""):
     # Create a regex pattern that matches punctuation but ignores specified characters
