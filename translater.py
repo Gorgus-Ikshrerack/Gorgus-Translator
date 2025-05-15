@@ -436,7 +436,7 @@ def from_actor_form(actor, lemma = True):
     if not lemma:
         raise Exception("Invalid parameters - lemma must be True")
 
-    return LancasterStemmer().stem(actor)
+    return stemmer.stem(actor)
 
 def get_trailing_punctuation(text, ignore_chars=""):
     # Create a regex pattern that matches punctuation but ignores specified characters
