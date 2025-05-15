@@ -17,4 +17,4 @@ jobs:
           python-version: '3.13'
 
       - name: Test
-        run: py -m unittest -v .\translater.py
+        run: python -m unittest -v .\translater.py
