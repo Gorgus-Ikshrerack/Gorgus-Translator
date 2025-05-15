@@ -432,19 +432,11 @@ def from_actor_form(actor, lemma = True):
     """
     # if wordnet is not available we have to make compromises
     if not wordnet_download_success: return actor
-    #! I AM AWARE THIS IS COMPLETE AND UTTER DOGSHIT!!!!
-    #! THIS IS TURNING AN O(1) OPERATION INTO AN O(n) OPERATION!!!!
-    #! I'M CONVERTING A SET TO A LIST, WHICH IS VERY BAD
-    #! BUT THIS SET IS SO SMALL I DONT GIVE A SHIT
-    #! RAHHHHHH
-    forms = list(get_word_forms(actor)["v"])
-    try:
-        if lemma:
-            return LancasterStemmer().stem(forms[0])
-            #return nlp(forms[0])[0].lemma_
-        return forms[0]
-    except IndexError:
-        return actor
+
+    if not lemma:
+        raise Exception("Invalid parameters - lemma must be True")
+
+    return LancasterStemmer().stem(actor)
 
 def get_trailing_punctuation(text, ignore_chars=""):
     # Create a regex pattern that matches punctuation but ignores specified characters
