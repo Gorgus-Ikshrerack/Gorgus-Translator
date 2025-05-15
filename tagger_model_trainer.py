@@ -48,7 +48,7 @@ def generate_bigram_tagger():
     return bigram_tagger
 
 def import_unigram_tagger():
-    try:
+    #try:
         import pickle
         import os
 
@@ -65,7 +65,7 @@ def import_unigram_tagger():
         #return None
 
 def import_bigram_tagger():
-    try:
+    #try:
         import pickle
         import os
 
