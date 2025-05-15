@@ -59,8 +59,8 @@ def import_unigram_tagger():
     # pickling doesn't work in the WASM version of CPython, prevent pickle loading errors from borking the web translator.
     # Also the file may not exist.
     #     ~ HSI
-    except:
-        return None
+    #except:
+        #return None
     #except:
         #return None
 
@@ -76,8 +76,8 @@ def import_bigram_tagger():
     # pickling doesn't work in the WASM version of CPython, prevent pickle loading errors from borking the web translator.
     # Also the file may not exist.
     #     ~ HSI
-    except:
-        return None
+    #except:
+        #return None
     #except:
         #return None
 
