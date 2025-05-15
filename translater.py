@@ -430,9 +430,6 @@ def from_actor_form(actor, lemma = True):
     """
     Convert an actor form word back to its root.
     """
-    # if wordnet is not available we have to make compromises
-    if not wordnet_download_success: return actor
-
     if not lemma:
         raise Exception("Invalid parameters - lemma must be True")
 
