@@ -225,6 +225,9 @@ translation_dictionary = {
     "clidó": "weather",
     "súshól": ["entirety", "totality"],
     "shćhnorg": "boat",
+    "yipasi": ["joy", "happiness", "excitement"],
+    "bum": ["sadness"],
+    "jajasta": ["path", "road"],
 
     # metals
     "steel": "steel",
@@ -327,6 +330,7 @@ translation_dictionary = {
     "ving": ["of", "about"],
     "dreek": "touch",
     "dräker": "feel",
+    "dräke": "feeling",
     "glimpt": "know",
     "gorse̱": "is",
     "zup": "be",
@@ -376,7 +380,7 @@ translation_dictionary = {
     "muggit": "give",
     "wheremecopha": "send",
     "morple": "attract",
-    "yaẖp": ["say", "speak", "talk"],
+    "yaẖp": ["say", "speak", "talk", "communicate"],
     "yaẖpå": "tell",
     "forgor": "forget",
     "trik": "work",
@@ -425,6 +429,7 @@ translation_dictionary = {
     "hag": "hunt",
     "yipi": "excite",
     "frinch": "mangle",
+    "noemoov": "stay",
 
     # Proper Nouns
     "googrung": ["you", "thee"],
@@ -525,7 +530,7 @@ translation_dictionary = {
     "spink": ["sharp", "pointy"],
     "mump": ["first"],
     "mimp": ["final", "last"],
-    "ock": "far",
+    "ock": ["far", "distant"],
     "bock": "near",
     "megook": "serious",
     "shilt": ["favourite", "favorite"],
@@ -557,6 +562,7 @@ translation_dictionary = {
     "jaka": "sacred",
     "latwa": ["precious", "dearer", "valuable"],
     "wedidigó": "lost",
+    "yuwa": "different",
 
     # temperatures
     "sisf": "hot",
@@ -664,6 +670,8 @@ phrase_translations = { # if one of these phrases appears before another phrase 
     "greak": ["extremely unhappy"],
     "bog": ["oh no", "alas"],
 
+    "sactrabal": ["search", "try to find"],
+
     "nåno": ["compared to"],
     "dagunġa̐": ["better", "more good"],
 
@@ -677,6 +685,8 @@ phrase_translations = { # if one of these phrases appears before another phrase 
     "pritter marip": ["leave", "go away", "leave me alone", "move along"],
     "jètå": ["like a", "similar to a"],
     "ètå": ["similar to"],
+
+    "slita": ["manage to", "even"],
 
     "cubiling": "working on",
 
