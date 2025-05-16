@@ -48,36 +48,36 @@ def generate_bigram_tagger():
     return bigram_tagger
 
 def import_unigram_tagger():
-    try:
-        import dill
+    #try:
+        import pickle
         import os
 
         # noinspection PyBroadException
         #try:
         with open(f'{os.path.dirname(__file__)}/{unigram_tagger_file}', 'rb') as fin:
-            return dill.load(fin)
-    # pickling doesn't work in the WASM version of CPython, prevent dill loading errors from borking the web translator.
+            return pickle.load(fin)
+    # pickling doesn't work in the WASM version of CPython, prevent pickle loading errors from borking the web translator.
     # Also the file may not exist.
     #     ~ HSI
-    except:
-        return None
+    #except:
+        #return None
     #except:
         #return None
 
 def import_bigram_tagger():
-    try:
-        import dill
+    #try:
+        import pickle
         import os
 
         # noinspection PyBroadException
         #try:
         with open(f'{os.path.dirname(__file__)}/{bigram_tagger_file}', 'rb') as fin:
-            return dill.load(fin)
-    # pickling doesn't work in the WASM version of CPython, prevent dill loading errors from borking the web translator.
+            return pickle.load(fin)
+    # pickling doesn't work in the WASM version of CPython, prevent pickle loading errors from borking the web translator.
     # Also the file may not exist.
     #     ~ HSI
-    except:
-        return None
+    #except:
+        #return None
     #except:
         #return None
 
@@ -106,7 +106,7 @@ def get_bigram_tagger_and_train_if_not_found():
     return bigram_tagger
 
 def main():
-    import dill
+    import pickle
     import os
 
     brown_download_success = nltk_download("corpora/brown.zip", "brown")
@@ -118,10 +118,10 @@ def main():
 
     print("Saving taggers...")
     with open(f'{os.path.dirname(__file__)}/{unigram_tagger_file}', 'wb') as fout:
-        dill.dump(unigram_tagger, fout)
+        pickle.dump(unigram_tagger, fout)
 
     with open(f'{os.path.dirname(__file__)}/{bigram_tagger_file}', 'wb') as fout:
-        dill.dump(bigram_tagger, fout)
+        pickle.dump(bigram_tagger, fout)
 
     print("Complete!")
 
