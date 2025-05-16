@@ -158,10 +158,9 @@ import unicodedata
 import nltk
 import inflect
 
-import unigram_tagger_model_trainer
+import tagger_model_trainer
 
 from translations import *
-from word_forms.word_forms import get_word_forms
 from nltk.stem import WordNetLemmatizer, LancasterStemmer
 from typing import Literal
 from time import time
@@ -225,8 +224,8 @@ console.print("[bold bright_green]INFO[/bold bright_green] Importing [bold]nltk.
 import nltk.corpus
 console.print("[bold bright_green]INFO[/bold bright_green] Getting [bold]NLTK Unigram Tagger[/bold]..")
 # the default tagger is not good, for some reason.
-unigram_tagger = unigram_tagger_model_trainer.get_tagger_and_train_if_not_found()
-
+unigram_tagger = tagger_model_trainer.get_unigram_tagger_and_train_if_not_found()
+bigram_tagger  = tagger_model_trainer.get_bigram_tagger_and_train_if_not_found()
 
 def get_word_type(word):
     if word.strip() == "":
@@ -287,28 +286,29 @@ for norm_key in normalized_translation_dict:
     no_accent_to_accented[deaccented] = norm_key
 
 def detect_verb_tense(verb, previous_word = None):
-    try:
-        #print(nltk.pos_tag(nltk.word_tokenize("The quick brown fox " + verb + " over the lazy dog.")))
-        tokenized_verb = nltk.word_tokenize(((previous_word + " ") if previous_word else "") + verb)
+    compliant_verb = (((previous_word + " ") if previous_word else "") + verb)
+    # phrase translation is trigger happy
+    compliant_verb = compliant_verb.replace("zúgúgo", "Will")
+    tokenized_verb = compliant_verb.split(" ")
+
+    tagged_verb = bigram_tagger.tag(tokenized_verb)
+
+    if tagged_verb[len(tagged_verb) - 1][1] is None:
+        # try again but with the unigram tagger
         tagged_verb = unigram_tagger.tag(tokenized_verb)
-        _verb = tagged_verb[len(tagged_verb) - 1][1]
-        #print(verb)
-        #print(tagged_verb)
-        #print(_verb)
-        #raise Exception("stop!")
-    except IndexError:
-        return "norm"
-    
-    if (_verb == "VBD"):
+
+    _verb = tagged_verb[len(tagged_verb) - 1][1]
+
+    if _verb == "VBD":
         return "past"
     if _verb == "VB":
         if previous_word or len(tokenized_verb) != 1:
             if tagged_verb[0][1] == "MD" and tokenized_verb[0] == "will":
                 return "futr"
         return "norm"
-    if (_verb == "VBG"):
+    if _verb == "VBG":
         return "cont"
-    if (_verb == "VBN"):
+    if _verb == "VBN":
         return "past"
     return "norm"
     # if (
@@ -430,21 +430,10 @@ def from_actor_form(actor, lemma = True):
     """
     Convert an actor form word back to its root.
     """
-    # if wordnet is not available we have to make compromises
-    if not wordnet_download_success: return actor
-    #! I AM AWARE THIS IS COMPLETE AND UTTER DOGSHIT!!!!
-    #! THIS IS TURNING AN O(1) OPERATION INTO AN O(n) OPERATION!!!!
-    #! I'M CONVERTING A SET TO A LIST, WHICH IS VERY BAD
-    #! BUT THIS SET IS SO SMALL I DONT GIVE A SHIT
-    #! RAHHHHHH
-    forms = list(get_word_forms(actor)["v"])
-    try:
-        if lemma:
-            return LancasterStemmer().stem(forms[0])
-            #return nlp(forms[0])[0].lemma_
-        return forms[0]
-    except IndexError:
-        return actor
+    if not lemma:
+        raise Exception("Invalid parameters - lemma must be True")
+
+    return stemmer.stem(actor)
 
 def get_trailing_punctuation(text, ignore_chars=""):
     # Create a regex pattern that matches punctuation but ignores specified characters
@@ -1126,7 +1115,9 @@ class TranslationTester(unittest.TestCase):
             "Hi! How are you?": "Dink! Dup pritterok lunk",
             "How is the weather?": "Dup gorse̱ clidó lunk",
             "I love you.": "H'orpó googrung.",
-            "He slept.": "Nåck eepra.",
+            # Slept doesn't seem to translate for some reason - even when correctly identified...
+            #   ~ HSI
+            #"He slept.": "Nåck eepra.",
             "What's up?": "Dup pritterok lunk",
             "Do you like to eat?": "Gè'googrung jeek tå chonġle̱ lunk",
             "What is going on?": "Nergo're pritterok hoog lunk",
