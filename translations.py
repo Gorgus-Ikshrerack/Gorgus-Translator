@@ -552,7 +552,7 @@ translation_dictionary = {
     "slevó": ["half", "semi"],
     "zorpmon": "poor",
     "dagunmun": "rich",
-    "indefop": "truly",
+    "indefop": "trufly",
     "koivit": "dead",
     "moibnit": "alive",
     "snåta": ["pretty"],
@@ -686,7 +686,7 @@ phrase_translations = { # if one of these phrases appears before another phrase 
     "jètå": ["like a", "similar to a"],
     "ètå": ["similar to"],
 
-    "slita": ["manage to", "even"],
+    "slita": ["even", "manage to"],
 
     "cubiling": "working on",
 
