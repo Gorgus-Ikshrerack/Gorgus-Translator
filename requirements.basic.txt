@@ -2,4 +2,3 @@ setuptools
 wheel
 nltk
 inflect
-dill
