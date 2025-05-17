@@ -221,7 +221,12 @@ if not (wordnet_download_success and brown_download_success and punkt_download_s
     raise Exception("NLTK Resources Download Failed!")
 
 console.print("[bold bright_green]INFO[/bold bright_green] Importing [bold]nltk.corpus[/bold]..")
+
 import nltk.corpus
+
+nltk.corpus.wordnet.ensure_loaded()
+#nltk.corpus.brown.ensure_loaded()
+
 console.print("[bold bright_green]INFO[/bold bright_green] Getting [bold]NLTK Unigram Tagger[/bold]..")
 # the default tagger is not good, for some reason.
 unigram_tagger = tagger_model_trainer.get_unigram_tagger_and_train_if_not_found()
