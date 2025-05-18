@@ -579,7 +579,7 @@ translation_dictionary = {
 }
 
 dictionary_information = {
-    "word_flags_presets": {
+    "word_flag_presets": {
         "informal": {
             "text": "Informal",
             "textual_tag": "red"
