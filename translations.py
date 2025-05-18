@@ -579,29 +579,79 @@ translation_dictionary = {
 }
 
 dictionary_information = {
-    "informal_words": [
-        "zorper",
-        "jink",
-        "jinkok",
-        "gdorp",
-        "quam",
-        "bozer",
-        "toop",
-        "pliop",
-        "nink",
-        "zogo",
-        "srinch",
-        "gumblegoge",
-        "sćhlonk"
-    ],
-    "extra_info": {
-        "agger": "[bright_green]platonic[/bright_green]",
-        "forp": "[deep_pink1]romantic[/deep_pink1]",
-        "gdorp": "[bold orange1]slur[/bold orange1], slur against gorgóćhians",
-        "glunch": "to make something / someone unrecognisable on a quantum level",
-        "gorgóćhian": "the race that speaks Gorgus",
-        "gorgus": "the language spoken by gorgóćhians",
-        "gorgoćhia": "the country where gorgóćhians come from"
+    "word_flags_presets": {
+        "informal": {
+            "text": "Informal",
+            "textual_tag": "red"
+        },
+        "slur": {
+            "text": "Slur",
+            "textual_tag": "bold orange1"
+        }
+    },
+    "word_flags": {
+        "zorper": [
+            "informal"
+        ],
+        "jink": [
+            "informal"
+        ],
+        "jinkok": [
+            "informal"
+        ],
+        "quam": [
+            "informal"
+        ],
+        "bozer": [
+            "informal"
+        ],
+        "toop": [
+            "informal"
+        ],
+        "nink": [
+            "informal"
+        ],
+        "zogo": [
+            "informal"
+        ],
+        "srinch": [
+            "informal"
+        ],
+        "gumblegoge": [
+            "informal"
+        ],
+        "sćhlonk": [
+            "informal"
+        ],
+        "agger": [
+            {
+                "text": "Platonic",
+                "textual_tag": "bright_green"
+            }
+        ],
+        "forp": [
+            {
+                "text": "Romantic",
+                "textual_tag": "deep_pink1"
+            }
+        ],
+        "gdorp": [
+            "informal",
+            "slur",
+            "slur against gorgóćhians"
+        ],
+        "glunch": [
+            "to make something / someone unrecognisable on a quantum level"
+        ],
+        "gorgóćhian": [
+            "the race that speaks Gorgus"
+        ],
+        "gorgus": [
+            "the language spoken by gorgóćhians"
+        ],
+        "gorgoćhia": [
+            "the country where gorgóćhians come from"
+        ]
     }
 }
 
