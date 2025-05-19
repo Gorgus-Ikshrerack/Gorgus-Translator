@@ -332,7 +332,7 @@ class GorgusTranslator(App):
                     if word_flag_object is None:
                         info.append(word_flag)
                     else:
-                        info.append(f"[{word_flag_object['textual_tag']}]{word_flag_object['text']}[/{word_flag_object['textual_tag']}]{word_flag_index != len(dictionary_information["word_flags"][gorgus]) - 1 and "; " or ""}")
+                        info.append(f"[{word_flag_object['textual_tag']}]{word_flag_object['text']}[/{word_flag_object['textual_tag']}]{word_flag_index != len(dictionary_information['word_flags'][gorgus]) - 1 and "; " or ""}")
             #extra_info = dictionary_information.get("extra_info").get(gorgus)
             #if extra_info:
                 #info.append(extra_info)
