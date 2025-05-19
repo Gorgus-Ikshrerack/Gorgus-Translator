@@ -563,6 +563,7 @@ translation_dictionary = {
     "latwa": ["precious", "dearer", "valuable"],
     "wedidigó": "lost",
     "yuwa": "different",
+    "dorp": "annoying",
 
     # temperatures
     "sisf": "hot",
