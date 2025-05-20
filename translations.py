@@ -228,6 +228,7 @@ translation_dictionary = {
     "yipasi": ["joy", "happiness", "excitement"],
     "bum": ["sadness"],
     "jajasta": ["path", "road"],
+    "coob": ["box", "cube"],
 
     # metals
     "steel": "steel",
@@ -430,6 +431,7 @@ translation_dictionary = {
     "yipi": "excite",
     "frinch": "mangle",
     "noemoov": "stay",
+    "dúd": "annoy",
 
     # Proper Nouns
     "googrung": ["you", "thee"],
