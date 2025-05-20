@@ -311,15 +311,32 @@ class GorgusTranslator(App):
                 continue
 
             info = []
-            if gorgus in dictionary_information.get("informal_words"):
-                if not include_informal_words:
-                    continue
+            if gorgus in dictionary_information["word_flags"]:
+                is_informal = False
 
-                info.append("[red]informal[/red]")
-            extra_info = dictionary_information.get("extra_info").get(gorgus)
-            if extra_info:
-                info.append(extra_info)
-            info = ', '.join(info)
+                for word_flag_index in range(len(dictionary_information["word_flags"][gorgus])):
+                    word_flag = dictionary_information["word_flags"][gorgus][word_flag_index]
+
+                    if word_flag == 'informal' and not include_informal_words:
+                        is_informal = True
+                        break
+
+                    word_flag_object: dict | None = None
+
+                    if type(word_flag) == str:
+                        if word_flag in dictionary_information["word_flag_presets"]:
+                            word_flag_object = dictionary_information["word_flag_presets"][word_flag]
+                    else:
+                        word_flag_object = word_flag
+
+                    if word_flag_object is None:
+                        info.append(word_flag)
+                    else:
+                        info.append(f"[{word_flag_object['textual_tag']}]{word_flag_object['text']}[/{word_flag_object['textual_tag']}]{word_flag_index != len(dictionary_information['word_flags'][gorgus]) - 1 and '; ' or ''}")
+            #extra_info = dictionary_information.get("extra_info").get(gorgus)
+            #if extra_info:
+                #info.append(extra_info)
+            info = ''.join(info)
 
             if type(english) == str:
                 table.add_row(f"[blue]{gorgus}[/blue]", f"[green]{english}[/green]", info)
