@@ -228,6 +228,7 @@ translation_dictionary = {
     "yipasi": ["joy", "happiness", "excitement"],
     "bum": ["sadness"],
     "jajasta": ["path", "road"],
+    "coob": ["box", "cube"],
 
     # metals
     "steel": "steel",
@@ -565,7 +566,6 @@ translation_dictionary = {
     "latwa": ["precious", "dearer", "valuable"],
     "wedidigó": "lost",
     "yuwa": "different",
-    "dorp": "annoying",
 
     # temperatures
     "sisf": "hot",
