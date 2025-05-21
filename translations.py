@@ -430,6 +430,8 @@ translation_dictionary = {
     "yipi": "excite",
     "frinch": "mangle",
     "noemoov": "stay",
+    "flifló": "walk",
+    "plipló": "run",
 
     # Proper Nouns
     "googrung": ["you", "thee"],
