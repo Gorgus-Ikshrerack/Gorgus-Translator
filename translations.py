@@ -810,7 +810,8 @@ ignored_plurals = [ # words that can't be pluralised
     "never",
     "door",
     "forever",
-    "dearer"
+    "dearer",
+    "craft"
 ]
 
 ignored_actor_nouns = [ # words that can't be turned into actor nouns
