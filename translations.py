@@ -435,6 +435,7 @@ translation_dictionary = {
     "plipló": "run",
     "mipi": "mine",
     "cipi": "craft",
+    "bimlog": "fight",
 
     # Proper Nouns
     "googrung": ["you", "thee"],
