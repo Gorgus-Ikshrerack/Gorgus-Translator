@@ -433,6 +433,8 @@ translation_dictionary = {
     "noemoov": "stay",
     "flifló": "walk",
     "plipló": "run",
+    "mipi": "mine",
+    "cipi": "craft",
 
     # Proper Nouns
     "googrung": ["you", "thee"],
