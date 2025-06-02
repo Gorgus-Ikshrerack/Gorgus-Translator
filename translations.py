@@ -229,6 +229,7 @@ translation_dictionary = {
     "bum": ["sadness"],
     "jajasta": ["path", "road"],
     "coob": ["box", "cube"],
+    "splorg": "goon",
     "goink": ["pig", "hog"],
 
     # metals
