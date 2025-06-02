@@ -229,6 +229,7 @@ translation_dictionary = {
     "bum": ["sadness"],
     "jajasta": ["path", "road"],
     "coob": ["box", "cube"],
+    "goink": ["pig", "hog"],
 
     # metals
     "steel": "steel",
@@ -569,6 +570,7 @@ translation_dictionary = {
     "latwa": ["precious", "dearer", "valuable"],
     "wedidigó": "lost",
     "yuwa": "different",
+    "araga": "feral",
 
     # temperatures
     "sisf": "hot",
