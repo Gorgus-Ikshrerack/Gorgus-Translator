@@ -230,6 +230,7 @@ translation_dictionary = {
     "jajasta": ["path", "road"],
     "coob": ["box", "cube"],
     "splorg": "goon",
+    "goink": ["pig", "hog"],
 
     # metals
     "steel": "steel",
@@ -570,6 +571,7 @@ translation_dictionary = {
     "latwa": ["precious", "dearer", "valuable"],
     "wedidigó": "lost",
     "yuwa": "different",
+    "araga": "feral",
 
     # temperatures
     "sisf": "hot",
