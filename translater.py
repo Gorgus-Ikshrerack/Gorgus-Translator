@@ -495,7 +495,7 @@ def get_ipa_pronounciation(gorgus: str):
         "g": ["g", "gg"],
         "ɛ": ["è"],
         "R": ["ŕ̈"], # r trill
-        "e͡ɪ": ["ae", "ä", "â", "ai", "ay"],
+        "e͡ɪ": ["ae", "ä", "â", "ay"],
         "ɪ": ["i"],
         "ɪŋk": ["ink"],
         "eŋk": ["enk"],
@@ -512,6 +512,7 @@ def get_ipa_pronounciation(gorgus: str):
         "aɪd": ["ide", "ied"],
         "kχ": ["ç"],
         "m": ["m", "mm", "mmm"],
+        'aɪ': ["ả"],
         "ː": [translation_dictionary["<EXAGGERATED_VERB>"]], # exaggerated vowel
         "\u0324˨˩": [translation_dictionary["<GENTLE_VERB>"]], # gentle
         "": ['a̱', 'ḇ', 'c̱', 'ḏ', 'e̱', 'f̱', 'g̱', 'ẖ', 'i̱', 'j̱', 'ḵ', 'ḻ', 'm̱', 'ṉ', 'o̱', 'p̱', 'q̱', 'ṟ', 's̱', 'ṯ', 'u̱', 'v̱', 'w̱', 'x̱', 'y̱', 'ẕ'] # silent letters
