@@ -231,6 +231,7 @@ translation_dictionary = {
     "coob": ["box", "cube"],
     "splorg": "goon",
     "goink": ["pig", "hog"],
+    "shinama": ["theatre", "cinema"],
 
     # metals
     "steel": "steel",
@@ -573,6 +574,7 @@ translation_dictionary = {
     "wedidigó": "lost",
     "yuwa": "different",
     "araga": "feral",
+    "subsil": ["complete", "total", "absolute"],
 
     # temperatures
     "sisf": "hot",
@@ -729,6 +731,7 @@ phrase_translations = { # if one of these phrases appears before another phrase 
     "jink": ["fuck", "damn", "god damn", "damn it", "damnit", "god damn it", "god damnit"],
     "greak": ["extremely unhappy"],
     "bog": ["oh no", "alas"],
+    "zorp̂": "abysmal",
 
     "sisf̃": "warm",
     "sactrabal": ["search", "try to find"],
