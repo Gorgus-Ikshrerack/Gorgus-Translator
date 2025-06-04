@@ -542,7 +542,7 @@ translation_dictionary = {
     "mimp": ["final", "last"],
     "ock": ["far", "distant"],
     "bock": "near",
-    "megook": "serious",
+    "megolok": "serious",
     "shilt": ["favourite", "favorite"],
     "muneg": "full",
     "plong": "funny",
