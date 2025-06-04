@@ -48,7 +48,7 @@ translation_dictionary = {
     "doit": "language",
     "jid": "that",
     "ikjid": "those",
-    "fräk": ["explosive", "explosion", "explode", "boom"],
+    "fräk": ["bomb", "explosive", "explosion", "explode", "boom"],
     "matapat": "theory",
     "clungus": ["they", "them"],
     "cäve̱": ["home", "house"],
