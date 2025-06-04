@@ -867,7 +867,8 @@ ignored_actor_nouns = [ # words that can't be turned into actor nouns
     "brother",
     "flower",
     "weather",
-    "dearer"
+    "dearer",
+    "computer"
 ]
 
 modifier_info = {
