@@ -1119,7 +1119,7 @@ class TranslationTester(unittest.TestCase):
         tests_to_gorgus = {
             "Very cool! Very good. :)": "Klû! Dagunġâ. :)",
             "Hi! How are you?": "Dink! Dup pritterok lunk",
-            "How is the weather?": "Dup gorse̱ clidó lunk",
+            "How is the weather?": "Dup gorse̱ lú clidó lunk",
             "I love you.": "H'orpó googrung.",
             # Slept doesn't seem to translate for some reason - even when correctly identified...
             #   ~ HSI
@@ -1127,7 +1127,7 @@ class TranslationTester(unittest.TestCase):
             "What's up?": "Dup pritterok lunk",
             "Do you like to eat?": "Gè'googrung jeek tå chonġle̱ lunk",
             "What is going on?": "Nergo're pritterok hoog lunk",
-            "Why is the sky blue?": "Pif gorse̱ sohong wat lunk"
+            "Why is the sky blue?": "Pif gorse̱ lú sohong wat lunk"
         }
 
         # go through each test
@@ -1144,7 +1144,7 @@ class TranslationTester(unittest.TestCase):
             "Minġer goob'rung ji dagsâ dublub. :)": "I hope you have a really nice day. :)",
             "Jid shrerack, henġer huffer clor'ge dagsa.": "That person, me believe they're nice.",
             "Ikshmack horge kithrark̂.": "Cats are really angry.",
-            "Toopyat!": "Shit!"
+            "Vågsayat!": "Shit!"
         }
 
         # go through each test
