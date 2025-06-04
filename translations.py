@@ -422,7 +422,7 @@ translation_dictionary = {
     "blisap": "forever",
     "kikrok": "abuse",
     "megèdink": "meet",
-    "horktora": "leak",
+    "horktoras": "leak",
     "wakla": "spread",
     'yaẖç': "chase",
     "binç": "born",
