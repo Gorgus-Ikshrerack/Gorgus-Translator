@@ -234,6 +234,7 @@ translation_dictionary = {
     "splorg": "goon",
     "goink": ["pig", "hog"],
     "shinama": ["theatre", "cinema"],
+    "flogop": "mutiny",
 
     # metals
     "steel": "steel",
