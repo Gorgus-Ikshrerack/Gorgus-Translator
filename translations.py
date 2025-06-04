@@ -729,7 +729,7 @@ phrase_translations = { # if one of these phrases appears before another phrase 
     "greak": ["extremely unhappy"],
     "bog": ["oh no", "alas"],
 
-    "sisf̃.": "warm",
+    "sisf̃": "warm",
     "sactrabal": ["search", "try to find"],
 
     "nåno": ["compared to"],
