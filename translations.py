@@ -315,6 +315,7 @@ translation_dictionary = {
     ### End of Symbols ###
     "chonġle̱": ["eat", "devour"],
     "ćhlore̱": ["drink", "slurp"],
+    "flormp": "consume",
     "huffer": ["believe", "reckon", "think"],
     "thork": ["hate", "loathe", "despise"],
     "geep": ["do", "commit"],
