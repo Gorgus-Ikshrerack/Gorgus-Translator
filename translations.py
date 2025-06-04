@@ -731,6 +731,7 @@ phrase_translations = { # if one of these phrases appears before another phrase 
 
     "sisf̃": "warm",
     "sactrabal": ["search", "try to find"],
+    "chast": ["swear to", "swear upon"],
 
     "nåno": ["compared to"],
     "dagunġa̐": ["better", "more good"],
