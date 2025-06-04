@@ -572,8 +572,8 @@ def to_gorgus(user_input, formal = True):
 
     previous_english_word = None
     for i, word in enumerate(words): 
-        if word == "the": # skip "the", there is no equivelant in gorgus
-            continue
+        #if word == "the": # skip "the", there is no equivelant in gorgus
+        #    continue
 
         trailing_punctuation = get_trailing_punctuation(word, translation_dictionary["<EXAGGERATED_VERB>"] + translation_dictionary["<GENTLE_VERB>"] + translation_dictionary["<MORE_VERB>"] + translation_dictionary["<LESS_VERB>"])
         word = word.translate(str.maketrans('', '', "?.!,\":()=/\\$[]"))

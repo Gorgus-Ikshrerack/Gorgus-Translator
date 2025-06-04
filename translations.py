@@ -3,6 +3,8 @@
 #
 
 translation_dictionary = {
+    "lú": "the",
+
     # Determiner
     "plomby": ["many", "several"],
 
