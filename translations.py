@@ -483,7 +483,7 @@ translation_dictionary = {
     "gooh": "off",
     "murp": "up",
     "durp": "down",
-    "moreak": "upon",
+    "moreask": "upon",
     "gidoo": "from",
     "cupoo": "inside",
     "cupee": "outside",
