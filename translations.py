@@ -768,7 +768,7 @@ phrase_translations = { # if one of these phrases appears before another phrase 
     "bit'up": "going to be",
 
     "maloi": ["evil", "bad thing", "terrible thing", "evil thing"],
-    "ikmaloi": ["evils", "bad things", "terrible things", "evil things"],
+    "ikmaloi": ["evils", "bad things", "terrible things", "evil things", "damned"],
 
     "sna'rse": ["she's", "shes", "she is"],
     "na'rse": ["he's", "hes", "he is"],
