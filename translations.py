@@ -445,6 +445,7 @@ translation_dictionary = {
     "cipi": "craft",
     "bimlog": "fight",
     "zark": "swear",
+    "plis": "reduce",
 
     # Proper Nouns
     "googrung": ["you", "thee"],
