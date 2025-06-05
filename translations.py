@@ -747,6 +747,8 @@ phrase_translations = { # if one of these phrases appears before another phrase 
 
     "gorse̱ latwa̐": ["is more valuable", "means more"],
 
+    "goog zuméb": "you will be",
+
     "zorp ikspek": "profanity",
     "jid gorse": ["that's", "thats", "that is"],
 
