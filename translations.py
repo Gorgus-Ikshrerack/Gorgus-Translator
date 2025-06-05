@@ -235,6 +235,7 @@ translation_dictionary = {
     "goink": ["pig", "hog"],
     "shinama": ["theatre", "cinema"],
     "flogop": "mutiny",
+    "plofog": "video",
 
     # metals
     "steel": "steel",
