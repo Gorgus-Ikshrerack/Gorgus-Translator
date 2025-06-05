@@ -743,6 +743,8 @@ phrase_translations = { # if one of these phrases appears before another phrase 
     "sactrabal": ["search", "try to find"],
     "chast": ["swear to", "swear upon", "swear on"],
 
+    "loshop": "a lot",
+
     "nåno": ["compared to"],
     "dagunġa̐": ["better", "more good"],
 
@@ -778,8 +780,6 @@ phrase_translations = { # if one of these phrases appears before another phrase 
 
     "sna'rse": ["she's", "shes", "she is"],
     "na'rse": ["he's", "hes", "he is"],
-
-    "plomby": ["many", "a lot", "a lot of"]
 }
 
 word_features = {
