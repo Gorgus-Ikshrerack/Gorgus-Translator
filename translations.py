@@ -308,6 +308,7 @@ translation_dictionary = {
     "orgik": "sometime",
     "widilp": "never",
     "smikarit": "could",
+    "shlip": "anyway",
 
     # Verbs
     ### Symbols ###
