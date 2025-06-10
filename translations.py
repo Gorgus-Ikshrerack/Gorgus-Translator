@@ -448,6 +448,7 @@ translation_dictionary = {
     "bimlog": "fight",
     "zark": "swear",
     "plis": "reduce",
+    "ginglop": "fry",
 
     # Proper Nouns
     "googrung": ["you", "thee"],
@@ -742,6 +743,8 @@ phrase_translations = { # if one of these phrases appears before another phrase 
     "greak": ["extremely unhappy"],
     "bog": ["oh no", "alas"],
     "zorp̂": "abysmal",
+
+    "ginglop": "deep fry",
 
     "sisf̃": "warm",
     "sactrabal": ["search", "try to find"],
