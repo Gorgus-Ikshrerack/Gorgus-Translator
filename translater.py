@@ -660,7 +660,7 @@ def to_gorgus(user_input, formal = True):
         previous_english_word = word
 
     # Replace verb modifier words
-    for word in ["really", "extremely", "very", "absolutely"]:
+    for word in ["really", "extremely", "very", "absolutely", "super"]:
         translated = replace_word(translated, word, translation_dictionary["<EXAGGERATED_VERB>"])
     for word in ["kinda", "slightly", "somewhat"]:
         translated = replace_word(translated, word, translation_dictionary["<GENTLE_VERB>"])
