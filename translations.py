@@ -236,6 +236,7 @@ translation_dictionary = {
     "shinama": ["theatre", "cinema"],
     "flogop": "mutiny",
     "plofog": "video",
+    "raraẖ": "voice",
 
     # metals
     "steel": "steel",
@@ -582,6 +583,8 @@ translation_dictionary = {
     "yuwa": "different",
     "araga": "feral",
     "subsil": ["complete", "total", "absolute"],
+    "bobo": "loud",
+    "hobo": "quiet",
 
     # temperatures
     "sisf": "hot",
