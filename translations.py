@@ -237,6 +237,8 @@ translation_dictionary = {
     "flogop": "mutiny",
     "plofog": "video",
     "raraẖ": "voice",
+    "sneeborf": "illusion",
+    "foon": "sport",
 
     # metals
     "steel": "steel",
@@ -448,6 +450,7 @@ translation_dictionary = {
     "bimlog": "fight",
     "zark": "swear",
     "plis": "reduce",
+    "sniff": ["show", "demonstrate"],
 
     # Proper Nouns
     "googrung": ["you", "thee"],
@@ -585,6 +588,9 @@ translation_dictionary = {
     "subsil": ["complete", "total", "absolute"],
     "bobo": "loud",
     "hobo": "quiet",
+    "ship": "real",
+    "shop": "fake",
+    "hiyop": ["gross", "disgusting"],
 
     # temperatures
     "sisf": "hot",
